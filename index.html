@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Code Editor</title>
+</head>
+<body>
+  <!-- Navbar and buttons -->
+    <div class="code-toolbar">
+      <!-- copy button  -->
+      <button id="copyButton" class="button">Copy</button>
+      <!-- save button and file type selection  -->
+      <div class="saveFile">
+      <button id="saveButton" class="button">Save</button>
+      <select id="fileType">
+        <option value="javascript">javascript</option>
+        <option value="html">html</option>
+        <option value="css">css</option>
+      </select>
+    </div>
+    <!-- lock/unlock button  -->
+      <button id="lockButton" class="button">Lock/Unlock</button>
+    </div>
+    <!-- main container  -->
+    <div class="container">
+    <div class="left">
+        <!-- html textarea  -->
+        <label><i class="fa-brands fa-html5"></i>HTML</label>
+        <textarea  id="html-code"></textarea>
+        <!-- css textarea  -->
+        <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
+        <textarea  id="css-code"></textarea>
+        <!-- javascript textarea  -->
+        <label><i class="fa-brands fa-js"></i>JAVASCRIPT</label>
+        <textarea  id="js-code"></textarea>
+    </div>
+
+        <div class="right">
+            <!-- Output iframe  -->
+            <label><i class="fa-solid fa-play"></i>Output</label>
+            <iframe id="output">output</iframe>
+        </div>
+    </div>
+  </div>
+  <!-- javascript  -->
+  <script src="https://kit.fontawesome.com/ec345e6006.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
